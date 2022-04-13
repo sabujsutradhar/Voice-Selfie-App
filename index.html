@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <body>
+      <h1>Change the microphone image</h1>
+      <p><b>Description :</b> Change the microphone image when the computer is listening to what user is saying and when the computer stops listening show the original image (we already have uploaded a gif "speak.gif" which you can use when the computer is in listening to what user is sayig) <ul>
+      <li>As soon as user clicks on microphone button 1st change the button image to gif image using id "microphone"(a sign to the user that they can speak now as computer is listening) (<b>write this write this as 1st line of code </b>inside start() function in sketch.js)</li>
+      <li>Change the gif image back to original image using id "microphone" (a sign to the user that computer has stopped listening) (<b>write this write this as last line of code </b>inside start() function in sketch.js)</li>
+      </ul></p>
+	<div class="row mx-5 ">
+		<div class="col-md-7">
+			<a href="" id="link" download="myselfie.png"></a>
+	        <h1> <img id="logo_img" src="selfie.jpeg">Voice Selfie App </h1>
+		</div>
+		<div class="col-md-5 mt-3">
+       		 <button class="btn float-left mx-2" onclick="start()"><img src="mic.png" id="microphone" width="60" height="60"></button>
+			<textarea class="form-control" id="textbox" readonly="true"></textarea>
+
+		</div>
+	</div>
+    <div class="container">
+            <center>
+        	<div class="row mt-5">
+        		<div class="col-md-6 my-2">
+        			<div class="">
+        				<label> webcam : </label>
+			       		 <div id="camera"></div>
+        			</div>
+        		</div>
+        		<div class="col-md-6 my-2">
+        			 <div class="selife">
+        			 	<label>Your selife: </label>
+       				 <div id="result" ></div>
+        			 </div>
+        		</div>
+        	</div>
+        	<h4 style="color:red;">Please press allow as soon as popup comes. After you give a voice command</h4>
+        </center>
+ 
+    </div>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>
